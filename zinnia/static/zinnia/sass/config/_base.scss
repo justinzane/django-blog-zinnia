@@ -1,3 +1,7 @@
+/**
+ *   Customized for justinzane.com
+ */
+
 // Grid constants used by Susy
 $total-columns          : 6;
 $column-width           : 6em;
@@ -9,9 +13,33 @@ $show-grid-backgrounds  : false;
 $screen-layout          : 50em 12;
 
 // Fonts constants
-$font-size              : 12px;
-$font-family            : unquote("Arial, Helvetica, sans-serif");
-$font-family-fixed      : unquote("andale mono, lucida console, monospace");
+@include font-face("Irianis ADF Std",
+                   font-files("fonts/IrianisADFStd-Regular.otf",
+                              "fonts/IrianisADFStd-Bold.otf",
+                              "fonts/IrianisADFStd-Italic.otf",
+                              "fonts/IrianisADFStd-BoldItalic.otf"
+                              ));
+@include font-face("Anka/Coder",
+                   font-files("fonts/ankacoder_r.ttf",
+                              "fonts/ankacoder_b.ttf",
+                              "fonts/ankacoder_i.ttf",
+                              "fonts/ankacoder_bi.ttf"
+                              ));
+@include font-face("Anka/Coder Condensed",
+                   font-files("fonts/ankacoder_c87_r.ttf",
+                              "fonts/ankacoder_c87_b.ttf",
+                              "fonts/ankacoder_c87_i.ttf",
+                              "fonts/ankacoder_c87_bi.ttf"
+                              ));
+@include font-face("Anka/Coder Narrow",
+                   font-files("fonts/ankacoder_c75_r.ttf",
+                              "fonts/ankacoder_c75_b.ttf",
+                              "fonts/ankacoder_c75_i.ttf",
+                              "fonts/ankacoder_c75_bi.ttf"
+                              ));
+$font-size              : 14px;
+$font-family            : unquote("Irianis ADF Std, serif");
+$font-family-fixed      : unquote("Anka/Coder Condensed, monospace");
 
 // UI Colors
 $info-color             : #2BA6CB;

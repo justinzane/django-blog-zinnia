@@ -4,6 +4,7 @@ require 'susy'
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "img"
+fontss_dir = "fonts"
 javascripts_dir = "js"
 # CSS generation
 output_style = :compressed

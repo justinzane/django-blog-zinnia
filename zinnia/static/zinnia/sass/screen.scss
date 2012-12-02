@@ -6,6 +6,8 @@
 // Load librairies configured.
 @import "susy";
 @import "compass";
+@import "compass/css3";
+@import "compass/css3/font-face";
 // Import the mixins
 @import "mixins/icons";
 @import "mixins/tag-cloud";
